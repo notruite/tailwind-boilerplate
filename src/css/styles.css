@@ -3,6 +3,18 @@
 */
 
 
-.goldsssss {
-    color: red;
+.ui-icon-gripsmall-diagonal-se {
+    display: none !important;
+}
+
+.ui-resizable-e {
+    cursor: ew-resize !important;
+}
+
+.ui-resizable-s {
+    cursor: ns-resize !important;
+}
+
+.ui-resizable-se {
+    cursor: nwse-resize !important;
 }

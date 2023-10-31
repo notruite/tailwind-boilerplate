@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <script src="https://kit.fontawesome.com/33b245937e.js" crossorigin="anonymous"></script>
-    <title>Tailwind Boilerplate</title>
-  </head>
 
-  <body class="flex items-center justify-center h-screen bg-white">
-    <div class="bg-gray-100 rounded-[5px] w-[450px] shadow-lg overflow-hidden text-xs leading-none">
-      <div class="bg-slate-200 p-[5px] text-center">
-        <div class="float-left">
-          buttons
-        </div>
-        folder name
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://kit.fontawesome.com/33b245937e.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $(".ui-window").draggable({
+        handle: ".ui-window-handle"
+      });
+      $(".ui-window").resizable({
+        minHeight: 250,
+        minWidth: 400,
+        // alsoResize: ".col-span-1",
+      });
+    });
+  </script>
+
+
+
+  <title>Tailwind Boilerplate</title>
+</head>
+
+<body class=" h-screen bg-white">
+  <div class="ui-window bg-white rounded-[5px] w-[450px] shadow-lg overflow-hidden text-xs leading-none">
+    <div class="ui-window-handle bg-slate-200 p-[5px] text-center cursor-default">
+      <div class="float-left">
+        buttons
       </div>
-      <div class="grid grid-cols-3 bg-white h-[250px]">
-        <div class="col-span-1 border-r">
+      folder name
+    </div>
+    <div class="overflow-auto">
+      <div class="grid grid-cols-3 bg-white h-[250px] w-[450px]">
+        <div class="col-span-1 h-auto border-r">
           <ul class="list-none cursor-default">
             <li class="flex align-middle py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
               <div class="shrink pr-[5px]">
@@ -105,11 +125,14 @@
           </ul>
         </div>
         <div class="col-span-1">
-          
+
         </div>
       </div>
     </div>
-  </body>
 
-  <script src="./assets/js/main.js"></script>
+  </div>
+</body>
+
+<script src="./assets/js/main.js"></script>
+
 </html>

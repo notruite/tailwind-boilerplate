@@ -419,8 +419,17 @@ video {
 /* 
     Write your custom CSS here and also abstract your Tailwind css using @apply
 */
-.goldsssss {
-    color: red;
+.ui-icon-gripsmall-diagonal-se {
+    display: none !important;
+}
+.ui-resizable-e {
+    cursor: ew-resize !important;
+}
+.ui-resizable-s {
+    cursor: ns-resize !important;
+}
+.ui-resizable-se {
+    cursor: nwse-resize !important;
 }
 /* Custom CSS. Ensure this comes before the tailwind utilities*/
 /* purgecss end ignore */
@@ -445,6 +454,16 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-full {
+  height: 100%;
+}
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+.h-auto {
+  height: auto;
+}
 .w-\[450px\] {
   width: 450px;
 }
@@ -463,11 +482,8 @@ video {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.items-center {
-  align-items: center;
-}
-.justify-center {
-  justify-content: center;
+.overflow-auto {
+  overflow: auto;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -481,10 +497,6 @@ video {
 .bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 .bg-slate-200 {
   --tw-bg-opacity: 1;
