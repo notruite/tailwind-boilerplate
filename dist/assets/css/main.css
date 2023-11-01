@@ -419,20 +419,38 @@ video {
 /* 
     Write your custom CSS here and also abstract your Tailwind css using @apply
 */
-.ui-icon-gripsmall-diagonal-se {
-    display: none !important;
-}
-.ui-resizable-e {
-    cursor: ew-resize !important;
+.ui-icon {
+    opacity: 0;
 }
 .ui-resizable-s {
     cursor: ns-resize !important;
 }
+.ui-resizable-n {
+    cursor: ns-resize !important;
+}
+.ui-resizable-e {
+    cursor: ew-resize !important;
+}
+.ui-resizable-w {
+    cursor: ew-resize !important;
+}
 .ui-resizable-se {
     cursor: nwse-resize !important;
 }
+.ui-resizable-nw {
+    cursor: nwse-resize !important;
+}
+.ui-resizable-ne {
+    cursor: nesw-resize !important;
+}
+.ui-resizable-sw {
+    cursor: nesw-resize !important;
+}
 /* Custom CSS. Ensure this comes before the tailwind utilities*/
 /* purgecss end ignore */
+.absolute {
+  position: absolute;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -457,15 +475,14 @@ video {
 .h-full {
   height: 100%;
 }
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-.h-auto {
-  height: auto;
-}
 .w-\[450px\] {
   width: 450px;
+}
+.w-\[150px\] {
+  width: 150px;
+}
+.w-full {
+  width: 100%;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -478,6 +495,9 @@ video {
 }
 .list-none {
   list-style-type: none;
+}
+.grid-cols-\[150px_150px\] {
+  grid-template-columns: 150px 150px;
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));

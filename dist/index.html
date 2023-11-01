@@ -17,7 +17,13 @@
       $(".ui-window").resizable({
         minHeight: 250,
         minWidth: 400,
-        // alsoResize: ".col-span-1",
+        alsoResize: ".grid",
+        handles: 'e, w, n, s, se, sw, ne, nw',
+      });
+      $(".ui-window-column").resizable({
+        maxWidth: 250,
+        minWidth: 150,
+        handles: 'e',
       });
     });
   </script>
@@ -36,97 +42,100 @@
       folder name
     </div>
     <div class="overflow-auto">
-      <div class="grid grid-cols-3 bg-white h-[250px] w-[450px]">
-        <div class="col-span-1 h-auto border-r">
-          <ul class="list-none cursor-default">
-            <li class="flex align-middle py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
-              <div class="shrink pr-[5px]">
-                <img class="h-[15px]" src="assets/imgs/folder-icon.png">
-              </div>
-              <div class="flex-1">
-                projects
-              </div>
-              <div class="shrink">
-                <i class="fa-solid fa-caret-right"></i>
-              </div>
-            </li>
-            <li class="flex py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
-              <div class="shrink pr-[5px]">
-                <img class="h-[15px] object-contain" src="assets/imgs/folder-icon.png">
-              </div>
-              <div class="flex-1">
-                about
-              </div>
-              <div class="shrink">
-                <i class="fa-solid fa-caret-right"></i>
-              </div>
-            </li>
-            <li class="flex py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
-              <div class="shrink pr-[5px]">
-                <img class="h-[15px] object-contain" src="assets/imgs/folder-icon.png">
-              </div>
-              <div class="flex-1">
-                contact
-              </div>
-              <div class="shrink">
-                <i class="fa-solid fa-caret-right"></i>
-              </div>
-            </li>
-            <li class="flex py-[2px] px-[3px] bg-blue-600 text-white">
-              <div class="shrink pr-[5px]">
-                <img class="h-[15px] object-contain" src="assets/imgs/folder-icon.png">
-              </div>
-              <div class="flex-1">
-                press
-              </div>
-              <div class="shrink">
-                <i class="fa-solid fa-caret-right"></i>
-              </div>
-            </li>
-            <li class="flex py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
-              <div class="shrink pr-[5px]">
-                <img class="h-[15px] object-contain" src="assets/imgs/folder-icon.png">
-              </div>
-              <div class="flex-1">
-                awards
-              </div>
-              <div class="shrink">
-                <i class="fa-solid fa-caret-right"></i>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-span-1 border-r">
-          <ul class="list-none cursor-default	">
-            <li class="flex p-[3px] hover:bg-blue-600 hover:text-white">
-              <div class="shrink pr-[5px]">
-                icon
-              </div>
-              <div class="flex-1">
-                item
-              </div>
-            </li>
-            <li class="flex p-[3px] hover:bg-blue-600 hover:text-white">
-              <div class="shrink pr-[5px]">
-                icon
-              </div>
-              <div class="flex-1">
-                item
-              </div>
-            </li>
-            <li class="flex p-[3px] hover:bg-blue-600 hover:text-white">
-              <div class="shrink pr-[5px]">
-                icon
-              </div>
-              <div class="flex-1">
-                item
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-span-1">
+      <div class="grid grid-cols-[150px_150px] bg-white h-[250px] w-[450px]">
 
-        </div>
+
+
+          <div class="col-span-1 border-r ui-window-column">
+            <ul class="list-none cursor-default">
+              <li class="flex align-middle py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
+                <div class="shrink pr-[5px]">
+                  <img class="h-[15px]" src="assets/imgs/folder-icon.png">
+                </div>
+                <div class="flex-1">
+                  projects
+                </div>
+                <div class="shrink">
+                  <i class="fa-solid fa-caret-right"></i>
+                </div>
+              </li>
+              <li class="flex py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
+                <div class="shrink pr-[5px]">
+                  <img class="h-[15px] object-contain" src="assets/imgs/folder-icon.png">
+                </div>
+                <div class="flex-1">
+                  about
+                </div>
+                <div class="shrink">
+                  <i class="fa-solid fa-caret-right"></i>
+                </div>
+              </li>
+              <li class="flex py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
+                <div class="shrink pr-[5px]">
+                  <img class="h-[15px] object-contain" src="assets/imgs/folder-icon.png">
+                </div>
+                <div class="flex-1">
+                  contact
+                </div>
+                <div class="shrink">
+                  <i class="fa-solid fa-caret-right"></i>
+                </div>
+              </li>
+              <li class="flex py-[2px] px-[3px] bg-blue-600 text-white">
+                <div class="shrink pr-[5px]">
+                  <img class="h-[15px] object-contain" src="assets/imgs/folder-icon.png">
+                </div>
+                <div class="flex-1">
+                  press
+                </div>
+                <div class="shrink">
+                  <i class="fa-solid fa-caret-right"></i>
+                </div>
+              </li>
+              <li class="flex py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
+                <div class="shrink pr-[5px]">
+                  <img class="h-[15px] object-contain" src="assets/imgs/folder-icon.png">
+                </div>
+                <div class="flex-1">
+                  awards
+                </div>
+                <div class="shrink">
+                  <i class="fa-solid fa-caret-right"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="col-span-1 border-r ui-window-column">
+            <ul class="list-none cursor-default	">
+              <li class="flex p-[3px] hover:bg-blue-600 hover:text-white">
+                <div class="shrink pr-[5px]">
+                  icon
+                </div>
+                <div class="flex-1">
+                  item
+                </div>
+              </li>
+              <li class="flex p-[3px] hover:bg-blue-600 hover:text-white">
+                <div class="shrink pr-[5px]">
+                  icon
+                </div>
+                <div class="flex-1">
+                  item
+                </div>
+              </li>
+              <li class="flex p-[3px] hover:bg-blue-600 hover:text-white">
+                <div class="shrink pr-[5px]">
+                  icon
+                </div>
+                <div class="flex-1">
+                  item
+                </div>
+              </li>
+            </ul>
+          </div>
+        
+
       </div>
     </div>
 

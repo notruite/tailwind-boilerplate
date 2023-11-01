@@ -3,18 +3,40 @@
 */
 
 
-.ui-icon-gripsmall-diagonal-se {
-    display: none !important;
-}
 
-.ui-resizable-e {
-    cursor: ew-resize !important;
+.ui-icon {
+    opacity: 0;
 }
 
 .ui-resizable-s {
     cursor: ns-resize !important;
 }
 
+.ui-resizable-n {
+    cursor: ns-resize !important;
+}
+
+.ui-resizable-e {
+    cursor: ew-resize !important;
+}
+
+.ui-resizable-w {
+    cursor: ew-resize !important;
+}
+
 .ui-resizable-se {
     cursor: nwse-resize !important;
 }
+
+.ui-resizable-nw {
+    cursor: nwse-resize !important;
+}
+
+.ui-resizable-ne {
+    cursor: nesw-resize !important;
+}
+
+.ui-resizable-sw {
+    cursor: nesw-resize !important;
+}
+
