@@ -448,9 +448,6 @@ video {
 }
 /* Custom CSS. Ensure this comes before the tailwind utilities*/
 /* purgecss end ignore */
-.absolute {
-  position: absolute;
-}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -472,23 +469,23 @@ video {
 .h-screen {
   height: 100vh;
 }
-.h-full {
-  height: 100%;
-}
 .w-\[450px\] {
   width: 450px;
 }
 .w-\[150px\] {
   width: 150px;
 }
-.w-full {
-  width: 100%;
-}
 .flex-1 {
   flex: 1 1 0%;
 }
+.flex-auto {
+  flex: 1 1 auto;
+}
 .shrink {
   flex-shrink: 1;
+}
+.grow {
+  flex-grow: 1;
 }
 .cursor-default {
   cursor: default;
@@ -496,11 +493,17 @@ video {
 .list-none {
   list-style-type: none;
 }
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+.auto-rows-max {
+  grid-auto-rows: max-content;
+}
 .grid-cols-\[150px_150px\] {
   grid-template-columns: 150px 150px;
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.place-content-start {
+  place-content: start;
 }
 .overflow-auto {
   overflow: auto;

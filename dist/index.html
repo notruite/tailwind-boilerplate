@@ -17,7 +17,7 @@
       $(".ui-window").resizable({
         minHeight: 250,
         minWidth: 400,
-        alsoResize: ".grid",
+        alsoResize: ".ui-window-body",
         handles: 'e, w, n, s, se, sw, ne, nw',
       });
       $(".ui-window-column").resizable({
@@ -42,11 +42,8 @@
       folder name
     </div>
     <div class="overflow-auto">
-      <div class="grid grid-cols-[150px_150px] bg-white h-[250px] w-[450px]">
-
-
-
-          <div class="col-span-1 border-r ui-window-column">
+      <div class="ui-window-body flex bg-white h-[250px] w-[450px]">
+          <div class="shrink w-[150px] border-r ui-window-column">
             <ul class="list-none cursor-default">
               <li class="flex align-middle py-[2px] px-[3px] hover:bg-blue-600 hover:text-white">
                 <div class="shrink pr-[5px]">
@@ -106,7 +103,7 @@
             </ul>
           </div>
         
-          <div class="col-span-1 border-r ui-window-column">
+          <div class="shrink w-[150px] border-r ui-window-column">
             <ul class="list-none cursor-default	">
               <li class="flex p-[3px] hover:bg-blue-600 hover:text-white">
                 <div class="shrink pr-[5px]">
@@ -134,11 +131,11 @@
               </li>
             </ul>
           </div>
-        
+
+          <div class="flex-auto"></div>
 
       </div>
     </div>
-
   </div>
 </body>
 
