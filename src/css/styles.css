@@ -2,7 +2,13 @@
     Write your custom CSS here and also abstract your Tailwind css using @apply
 */
 
+body {
+    font-family: "Inter", sans-serif;
 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
 
 .ui-icon {
     opacity: 0;
