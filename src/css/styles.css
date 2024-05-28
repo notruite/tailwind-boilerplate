@@ -10,6 +10,19 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+.font-roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.font-instrument-serif {
+    font-family: "Instrument Serif", serif;
+}
+
+.font-barlow-condensed {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
 .ui-icon {
     opacity: 0;
 }
