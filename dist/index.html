@@ -38,13 +38,13 @@
         </div>
         <!-- <div class="bg-blue-500 h-[36px] w-[36px] rounded-full"></div> -->
         <div class="hidden lg:flex lg:gap-x-9">
-          <a href="#" class="text-gray-950 hover:text-gray-500 font-bold text-sm">Product</a>
-          <a href="#" class="text-gray-950 hover:text-gray-500 font-bold text-sm">Pricing</a>
-          <a href="#" class="text-gray-950 hover:text-gray-500 font-bold text-sm">Support</a>
+          <a href="#" class="text-gray-900 hover:text-gray-500 font-bold text-sm">Product</a>
+          <a href="#" class="text-gray-900 hover:text-gray-500 font-bold text-sm">Pricing</a>
+          <a href="#" class="text-gray-900 hover:text-gray-500 font-bold text-sm">Support</a>
         </div>
       </div>
       <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-950">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             aria-hidden="true">
@@ -53,14 +53,14 @@
         </button>
       </div>
       <div class="hidden lg:flex">
-        <a href="#" class="text-gray-950 hover:text-gray-500 font-bold text-sm px-3 py-2 mr-3">Log In</a>
+        <a href="#" class="rounded-md px-3 py-2 text-gray-900 hover:text-gray-500 font-bold text-sm mr-3">Log In</a>
 
-        <button type="button" class="rounded-md bg-gray-950 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-sm">Get Started <span
+        <button type="button" class="rounded-md bg-gray-900 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-sm">Get Started <span
           aria-hidden="true">&rarr;</span></button>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" role="dialog" aria-modal="true">
+    <div class="hidden" role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-10"></div>
       <div
@@ -68,9 +68,11 @@
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Phresque</span>
-            <div class="bg-gray-950 h-[36px] w-[36px] rounded-full"></div>
+            <div>
+              <img class="h-[36px]" src="/assets/imgs/phresque_logo.svg" alt="Your Company">
+            </div>
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-950">
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-900">
             <span class="sr-only">Close menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
               aria-hidden="true">
@@ -82,15 +84,15 @@
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <a href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-950 hover:bg-gray-50">Product</a>
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
               <a href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-950 hover:bg-gray-50">Pricing</a>
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pricing</a>
               <a href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-950 hover:bg-gray-50">Support</a>
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Support</a>
             </div>
             <div class="py-6 space-y-2">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-indigo-600 bg-indigo-50 hover:bg-indigo-100">Log in</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-indigo-600 hover:bg-indigo-500 text-white">Get Started <span aria-hidden="true">&rarr;</span></a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-blue-50 hover:text-blue-500">Log in</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-gray-900 hover:bg-blue-500 text-white">Get Started <span aria-hidden="true">&rarr;</span></a>
 
             </div>
           </div>
@@ -103,20 +105,19 @@
 <!-- HERO -->
   <div class="mx-auto max-w-7xl px-8 pt-2 pb-20">
     <div class="block w-full rounded-xl overflow-hidden bg-[url('/assets/imgs/hero-bg-painting.png')] bg-cover bg-center">
-      <div class="px-10 pt-14">
+      <div class="px-3 lg:px-10 pt-14">
         <div class="mx-auto max-w-xl py-28">
           <div class="text-center">
-            <h1 class="text-5xl font-bold tracking-tight text-gray-950 uppercase">
+            <h1 class="text-5xl font-bold tracking-tight text-gray-900 uppercase">
               <span class="font-barlow-condensed">AI image transformation </span> <br>
               <span class="font-instrument-serif italic">made simple</span>
             </h1>
-            <p class="mt-2 text-gray-950">Phresque streamlines the whole process so you can focus on what matters.</p>
-            <div class="mt-10 flex items-center justify-center gap-x-4">
+            <p class="mt-2 text-gray-900">Phresque streamlines the whole process so you can focus on what matters.</p>
+            <div class="mt-10 md:flex items-center justify-center gap-x-4">
 
-              <button type="button" class="rounded-md bg-white px-3 py-2 text-gray-950 shadow-sm hover:bg-gray-100 font-bold text-sm">Test In Browser</button>
+              <button type="button" class="mb-4 md:mb-auto rounded-md bg-white px-3 py-2 text-gray-900 shadow-sm hover:text-blue-500 hover:bg-blue-50 font-bold text-sm">Test In Browser</button>
 
-              <button type="button" class="rounded-md bg-gray-950 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-sm">Get Started For Free <span
-                aria-hidden="true">&rarr;</span></button>
+              <button type="button" class="rounded-md bg-gray-900 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-sm">Get Started For Free</button>
             </div>
 
             
@@ -135,11 +136,11 @@
 <div class="px-8">
   <div class="mx-auto max-w-xl pb-8">
     <div class="text-center">
-      <h1 class="text-5xl font-bold tracking-tight text-gray-950 uppercase">
+      <h1 class="text-5xl font-bold tracking-tight text-gray-900 uppercase">
         <span class="font-barlow-condensed">ONLY THE </span>
         <span class="font-instrument-serif italic">BEST</span>
       </h1>
-      <p class="mt-2 text-gray-950">Easy access to the latest AI technologies.</p>
+      <p class="mt-2 text-gray-900">Easy access to the latest AI technologies.</p>
 
     </div>
   </div>
@@ -147,36 +148,36 @@
 
   <div class="mx-auto max-w-7xl p-8 pb-20">
 
-    <div class="grid grid-cols-3 grid-flow-col gap-8">
-      <div class="col-span-1">
+    <div class="grid grid-cols-3 gap-8">
+      <div class="col-span-3 md:col-span-1">
         <ul class="space-y-6">
-          <li class="rounded-xl bg-white p-4">
+          <li class="rounded-xl bg-white p-4 ring-gray-200 ring-1 hover:bg-blue-50 hover:ring-blue-500 cursor-pointer">
             <div class="flex">
               <div class="grow">
-                <h2 class="font-bold text-gray-950">Not rocket science</h2>
+                <h2 class="font-bold text-gray-900">Not rocket science</h2>
               </div>
               <div class="flex text-gray-400">
                 <span aria-hidden="true">&rarr;</span>
               </div>
             </div>
           </li>
-          <li class="rounded-xl bg-white border-2 border-gray-950 p-4">
+          <li class="rounded-xl bg-white ring-blue-500 ring-1 p-4 hover:bg-blue-50 cursor-pointer">
             <div class="flex">
               <div class="grow">
-                <h2 class="font-bold mb-3 text-gray-950">Fully customizable</h2>
+                <h2 class="font-bold mb-3 text-gray-900">Fully customizable</h2>
               </div>
-              <div class="flex text-gray-950">
+              <div class="flex text-blue-500">
                 <span aria-hidden="true">&rarr;</span>
               </div>
             </div>
             
-            <p class="text-gray-950">Your requirements are very specific ? Not a problem, be in touch and make your dreams come true.</p>
+            <p class="text-gray-900">Your requirements are very specific ? Not a problem, be in touch and make your dreams come true.</p>
           </li>
 
-          <li class="rounded-xl bg-white p-4">
+          <li class="rounded-xl bg-white p-4 ring-gray-200 ring-1 hover:bg-blue-50 hover:ring-blue-500 cursor-pointer">
             <div class="flex">
               <div class="grow">
-                <h2 class="font-bold text-gray-950">Pay for what you use</h2>
+                <h2 class="font-bold text-gray-900">Pay for what you use</h2>
               </div>
               <div class="flex text-gray-400">
                 <span aria-hidden="true">&rarr;</span>
@@ -187,7 +188,7 @@
 
 
       </div>
-      <div class="col-span-2 bg-white h-[500px] rounded-xl text-center pt-60">CONTENT</div>
+      <div class="col-span-3 md:col-span-2 bg-white h-[500px] rounded-xl text-center pt-60 ring-gray-200 ring-1">CONTENT</div>
     </div>
 
 
@@ -205,12 +206,12 @@
 <div class="px-8">
   <div class="mx-auto max-w-xl pb-8">
     <div class="text-center">
-      <h1 class="text-5xl font-bold tracking-tight text-gray-950 uppercase">
+      <h1 class="text-5xl font-bold tracking-tight text-gray-900 uppercase">
         <span class="font-instrument-serif italic">VERY&nbsp;</span>
         <span class="font-barlow-condensed">SIMPLE PRICING</span>
         
       </h1>
-      <p class="mt-2 text-gray-950">Fully flexible, automatically adjusted with no hidden costs.</p>
+      <p class="mt-2 text-gray-900">Fully flexible, automatically adjusted with no hidden costs.</p>
 
     </div>
   </div>
@@ -221,30 +222,30 @@
 
   <div class="isolate mx-auto grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
     <div class="rounded-3xl p-8 ring-1 xl:p-10 ring-gray-200 bg-white">
-      <h3 class="mb-3 font-semibold text-gray-950">Starter</h3>
-      <p class="text-gray-950">Applies to smaller sized projects with under 1000 API calls per month.</p>
+      <h3 class="mb-3 font-semibold text-gray-900">Starter</h3>
+      <p class="text-gray-900">Applies to smaller sized projects with under 1000 API calls per month.</p>
       <p class="mt-6 flex items-baseline gap-x-1">
         <!-- Price, update based on frequency toggle state -->
-        <span class="text-4xl font-bold tracking-tight text-gray-950">$0.20</span>
+        <span class="text-4xl font-bold tracking-tight text-gray-900">$0.20</span>
         <!-- Payment frequency, update based on frequency toggle state -->
-        <span class="  font-semibold leading-6 text-gray-950">/call</span>
+        <span class="  font-semibold leading-6 text-gray-900">/call</span>
       </p>
-      <a href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md bg-gray-950 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-center">Buy plan</a>
-      <ul role="list" class="mt-8 space-y-3   leading-6 xl:mt-10 text-gray-950">
+      <a href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md bg-gray-900 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-center">Buy plan</a>
+      <ul role="list" class="mt-8 space-y-3   leading-6 xl:mt-10 text-gray-900">
         <li class="flex gap-x-3">
-          <svg class="h-6 w-5 flex-none text-gray-950" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="h-6 w-5 flex-none text-blue-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
           </svg>
           Dashboard access
         </li>
         <li class="flex gap-x-3">
-          <svg class="h-6 w-5 flex-none text-gray-950" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="h-6 w-5 flex-none text-blue-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
           </svg>
           Over 20 themes in our library
         </li>
         <li class="flex gap-x-3">
-          <svg class="h-6 w-5 flex-none text-gray-950" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="h-6 w-5 flex-none text-blue-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
           </svg>
           24-hour support response time
@@ -252,36 +253,36 @@
       </ul>
     </div>
     <div class="rounded-3xl p-8 ring-1 xl:p-10 ring-gray-200 bg-white">
-      <h3 id="tier-startup" class="mb-3 font-semibold text-gray-950">Advanced</h3>
-      <p class=" text-gray-950">Once your project is a hit with over 1000 API calls per month, the price changes.</p>
+      <h3 id="tier-startup" class="mb-3 font-semibold text-gray-900">Advanced</h3>
+      <p class=" text-gray-900">Once your project is a hit with over 1000 API calls per month, the price changes.</p>
       <p class="mt-6 flex items-baseline gap-x-1">
         <!-- Price, update based on frequency toggle state -->
-        <span class="text-4xl font-bold tracking-tight text-gray-950">$0.10</span>
+        <span class="text-4xl font-bold tracking-tight text-gray-900">$0.10</span>
         <!-- Payment frequency, update based on frequency toggle state -->
-        <span class="font-semibold leading-6 text-gray-950">/call</span>
+        <span class="font-semibold leading-6 text-gray-900">/call</span>
       </p>
-      <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-gray-950 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-center">Buy plan</a>
-      <ul role="list" class="mt-8 space-y-3   leading-6 xl:mt-10 text-gray-950">
+      <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-gray-900 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-center">Buy plan</a>
+      <ul role="list" class="mt-8 space-y-3   leading-6 xl:mt-10 text-gray-900">
         <li class="flex gap-x-3">
-          <svg class="h-6 w-5 flex-none text-gray-950" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="h-6 w-5 flex-none text-blue-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
           </svg>
           Dashboard access
         </li>
         <li class="flex gap-x-3">
-          <svg class="h-6 w-5 flex-none text-gray-950" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="h-6 w-5 flex-none text-blue-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
           </svg>
           Over 60 themes in our extended library
         </li>
         <li class="flex gap-x-3">
-          <svg class="h-6 w-5 flex-none text-gray-950" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="h-6 w-5 flex-none text-blue-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
           </svg>
           24-hour support response time
         </li>
         <li class="flex gap-x-3">
-          <svg class="h-6 w-5 flex-none text-gray-950" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="h-6 w-5 flex-none text-blue-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
           </svg>
           Marketing automations
@@ -347,10 +348,12 @@
   <footer class="bg-gray-900 mt-6" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-8 pb-8 pt-16">
-      <div class="flex">
-        <div class="grow space-y-6">
-          <div class="bg-white h-[36px] w-[36px] rounded-full"></div>
-          <p class="  leading-6 text-white">Made in Paris with &#10084;&#65039;</p>
+      <div class="block md:flex">
+        <div class="grow space-y-4 mb-8">
+          <div>
+            <img class="h-[36px]" src="/assets/imgs/phresque_logo_w.svg" alt="Your Company">
+          </div>
+          <p class="leading-6 text-white">Made in Paris with &#10084;&#65039;</p>
           <div class="flex space-x-6">
             <a href="#" class="text-white hover:text-gray-400">
               <span class="sr-only">Instagram</span>
@@ -372,11 +375,11 @@
             </a>
           </div>
         </div>
-        <div class="shrink">
-          <div class="grid grid-cols-3 gap-8">
+        <div class="grow">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 class="  font-semibold leading-6 text-white">Ressources</h3>
-              <ul role="list" class="mt-6 space-y-6">
+              <ul role="list" class="mt-6 space-y-4">
                 <li>
                   <a href="#" class="  leading-6 text-white hover:text-white">Docs</a>
                 </li>
@@ -392,7 +395,7 @@
               </ul>
             </div>
             <div>
-              <h3 class="  font-semibold leading-6 text-white">Company</h3>
+              <h3 class="font-semibold leading-6 text-white">Company</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
                   <a href="#" class="  leading-6 text-white hover:text-white">About</a>
@@ -405,8 +408,8 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="  font-semibold leading-6 text-white">Terms & Policies</h3>
+            <div >
+              <h3 class="font-semibold leading-6 text-white">Terms & Policies</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
                   <a href="#" class="  leading-6 text-white hover:text-white">Terms & Conditions</a>
@@ -423,7 +426,7 @@
         </div>
       </div>
       <div class="mt-16 border-t border-white pt-8">
-        <p class="text-xs leading-5 text-white">&copy; 2024 Phresque. All rights reserved.</p>
+        <p class="text-sm text-white">&copy; 2024 Phresque. All rights reserved.</p>
       </div>
     </div>
   </footer>
