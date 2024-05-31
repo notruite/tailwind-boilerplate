@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Instrument+Serif:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="https://kit.fontawesome.com/33b245937e.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+
+  <title>Phresque</title>
+</head>
+
+<body class="h-screen bg-stone-50">
+
+
+
+  <!-- HEADER -->
+  <header class="bg-stone-50 bg-opacity-95 sticky top-0 z-10	">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between py-6 px-8" aria-label="Global">
+      <div class="flex items-center gap-x-9">
+
+        <div>
+          <img class="h-[36px]" src="/assets/imgs/phresque_logo.svg" alt="Your Company">
+        </div>
+        <!-- <div class="bg-blue-500 h-[36px] w-[36px] rounded-full"></div> -->
+        <div class="hidden lg:flex lg:gap-x-3">
+          <a href="#" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm">Product</a>
+          <a href="#" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm">Pricing</a>
+          <a  href="#" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm">Quickstart</a>
+        </div>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex">
+        <a  href="#" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm mr-3" >Log In</a>
+
+        <button type="button" class="rounded-md bg-gray-900 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-sm">Get Started <span
+          aria-hidden="true">&rarr;</span></button>
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-10"></div>
+      <div
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Phresque</span>
+            <div>
+              <img class="h-[36px]" src="/assets/imgs/phresque_logo.svg" alt="Your Company">
+            </div>
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-900">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+              <a href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pricing</a>
+              <a href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Quickstart</a>
+            </div>
+            <div class="py-6 space-y-2">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-blue-50 hover:text-blue-500">Log in</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-gray-900 hover:bg-blue-500 text-white">Get Started <span aria-hidden="true">&rarr;</span></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="mx-auto max-w-7xl px-8 pt-2 pb-20">
+    <div class="max-w-[750px]">
+        <h1 class="text-5xl font-bold tracking-tight text-gray-900 uppercase mb-2">
+          <span class="font-barlow-condensed">Terms and Conditions</span>
+        </h1>
+
+        <div class="font-bold mb-4">Last Modified: May 31, 2024</div>
+
+        <h2 class="font-bold mb-2">Introduction</h2> 
+          
+        <p class="mb-4">These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Phresque accessible at http://www.phresque.com.</p>
+        
+        <p class="mb-4">These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions. These Terms and Conditions have been generated with the help of the <a href="https://www.termsandcondiitionssample.com">Terms And Conditiions Sample Generator</a>.</p>
+        
+        <p class="mb-4">Minors or people below 18 years old are not allowed to use this Website.</p>
+        
+        <h2 class="font-bold mb-2">Intellectual Property Rights</h2>
+        
+        <p class="mb-4">Other than the content you own, under these Terms, Phresque and/or its licensors own all the intellectual property rights and materials contained in this Website.</p>
+        
+        <p class="mb-4">You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+        
+        <h2 class="font-bold mb-2">Restrictions</h2>
+        
+        <p class="mb-4">You are specifically restricted from all of the following:</p>
+        
+        <ul class="mb-4 list-disc">
+            <li>publishing any Website material in any other media;</li>
+            <li>selling, sublicensing and/or otherwise commercializing any Website material;</li>
+            <li>publicly performing and/or showing any Website material;</li>
+            <li>using this Website in any way that is or may be damaging to this Website;</li>
+            <li>using this Website in any way that impacts user access to this Website;</li>
+            <li>using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;</li>
+            <li>engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;</li>
+            <li>using this Website to engage in any advertising or marketing.</li>
+        </ul>
+        
+        <p class="mb-4">Certain areas of this Website are restricted from being access by you and Phresque may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.</p>
+        
+        <h2 class="font-bold mb-2">Your Content</h2>
+        
+        <p class="mb-4">In these Website Standard Terms and Conditions, "Your Content" shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant Phresque a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.</p>
+        
+        <p class="mb-4">Your Content must be your own and must not be invading any third-party's rights. Phresque reserves the right to remove any of Your Content from this Website at any time without notice.</p>
+        
+        <h2 class="font-bold mb-2">No warranties</h2>
+        
+        <p class="mb-4">This Website is provided "as is," with all faults, and Phresque express no representations or warranties, of any kind related to this Website or the materials contained on this Website. Also, nothing contained on this Website shall be interpreted as advising you.</p>
+        
+        <h2 class="font-bold mb-2">Limitation of liability</h2>
+        
+        <p class="mb-4">In no event shall Phresque, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  Phresque, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
+        
+        <h2 class="font-bold mb-2">Indemnification</h2>
+        
+        <p class="mb-4">You hereby indemnify to the fullest extent Phresque from and against any and/or all liabilities, costs, demands, causes of action, damages and expenses arising in any way related to your breach of any of the provisions of these Terms.</p>
+        
+        <h2 class="font-bold mb-2">Severability</h2>
+        
+        <p class="mb-4">If any provision of these Terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein.</p>
+        
+        <h2 class="font-bold mb-2">Variation of Terms</h2>
+        
+        <p class="mb-4">Phresque is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis.</p>
+        
+        <h2 class="font-bold mb-2">Assignment</h2>
+        
+        <p class="mb-4">The Phresque is allowed to assign, transfer, and subcontract its rights and/or obligations under these Terms without any notification. However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these Terms.</p>
+        
+        <h2 class="font-bold mb-2">Entire Agreement</h2>
+            
+        <p class="mb-4">These Terms constitute the entire agreement between Phresque and you in relation to your use of this Website, and supersede all prior agreements and understandings.</p>
+        
+        <h2 class="font-bold mb-2">Governing Law & Jurisdiction</h2>
+        
+        <p>These Terms will be governed by and interpreted in accordance with the laws of the State of fr, and you submit to the non-exclusive jurisdiction of the state and federal courts located in fr for the resolution of any disputes.</p>
+
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 mt-6" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="mx-auto max-w-7xl px-8 pb-8 pt-16">
+      <div class="block md:flex">
+        <div class="grow space-y-4 mb-8">
+          <div>
+            <img class="h-[36px]" src="/assets/imgs/phresque_logo_w.svg" alt="Your Company">
+          </div>
+          <p class="leading-6 text-white text-sm">Made in Paris with &#10084;&#65039;</p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-white hover:text-gray-400">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-gray-400">
+              <span class="sr-only">X</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-gray-400">
+              <span class="sr-only">GitHub</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="grow">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h3 class="  font-semibold leading-6 text-white">Ressources</h3>
+              <ul role="list" class="mt-6 space-y-2 text-sm">
+                <li>
+                  <a href="#" class="  leading-6 text-white hover:underline">Docs</a>
+                </li>
+                <li>
+                  <a href="#" class="  leading-6 text-white hover:underline">Quickstart</a>
+                </li>
+                <li>
+                  <a href="#" class="  leading-6 text-white hover:underline">Release Notes</a>
+                </li>
+                <li>
+                  <a href="#" class="  leading-6 text-white hover:underline">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold leading-6 text-white">Company</h3>
+              <ul role="list" class="mt-6 space-y-2 text-sm">
+                <li>
+                  <a href="#" class=" leading-6 text-white hover:underline">About</a>
+                </li>
+                <li>
+                  <a href="#" class="  leading-6 text-white hover:underline">Careers</a>
+                </li>
+                <li>
+                  <a href="#" class="  leading-6 text-white hover:underline">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div >
+              <h3 class="font-semibold leading-6 text-white">Terms & Policies</h3>
+              <ul role="list" class="mt-6 space-y-2 text-sm">
+                <li>
+                  <a href="#" class="leading-6 text-white hover:underline">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#" class="leading-6 text-white hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="leading-6 text-white hover:underline">Website Terms</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 border-t border-white pt-8">
+        <p class="text-sm text-white">&copy; 2024 Phresque. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+</body>
+
+<script src="./assets/js/main.js"></script>
+
+</html>
