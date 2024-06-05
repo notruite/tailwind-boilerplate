@@ -19,7 +19,25 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  animation: {
+                      'infinite-scroll': 'infinite-scroll 80s linear infinite',
+                  },
+                  keyframes: {
+                      'infinite-scroll': {
+                          from: { transform: 'translateX(0)' },
+                          to: { transform: 'translateX(-100%)' },
+                      }
+                  }                    
+              },
+          },
+      };
+  </script>
 
   <title>Phresque</title>
 </head>
@@ -128,7 +146,88 @@
   </div>
 
 
+<!-- CAROUSEL -->
 
+
+
+
+
+<div class="relative flex flex-col justify-center overflow-hidden">
+  <div class="mx-auto max-w-7xl px-8 pt-2 pb-20">
+
+      <!-- Carousel animation -->
+      <div
+          x-data="{}"
+          x-init="$nextTick(() => {
+              let ul = $refs.ml_trans;
+              ul.insertAdjacentHTML('afterend', ul.outerHTML);
+              ul.nextSibling.setAttribute('aria-hidden', 'true');
+          })"
+          class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+      >
+          <ul x-ref="ml_trans" class="flex items-center justify-center md:justify-start gap-8 animate-infinite-scroll">
+              <li>
+                <div class="h-[250px] w-[250px] rounded-xl bg-[url('/assets/imgs/transformation_example.png')] bg-cover bg-center overflow-hidden">
+                  <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-30 h-full w-full relative cursor-pointer">
+                    <h2 class=" font-bold text-white z-10 h-100 bottom-4 absolute text-center w-full">90's Yearbook</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="h-[250px] w-[250px] rounded-xl bg-[url('/assets/imgs/transformation_example.png')] bg-cover bg-center overflow-hidden">
+                  <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-30 h-full w-full relative cursor-pointer">
+                    <h2 class=" font-bold text-white z-10 h-100 bottom-4 absolute text-center w-full">90's Yearbook</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="h-[250px] w-[250px] rounded-xl bg-[url('/assets/imgs/transformation_example.png')] bg-cover bg-center overflow-hidden">
+                  <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-30 h-full w-full relative cursor-pointer">
+                    <h2 class=" font-bold text-white z-10 h-100 bottom-4 absolute text-center w-full">90's Yearbook</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="h-[250px] w-[250px] rounded-xl bg-[url('/assets/imgs/transformation_example.png')] bg-cover bg-center overflow-hidden">
+                  <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-30 h-full w-full relative cursor-pointer">
+                    <h2 class=" font-bold text-white z-10 h-100 bottom-4 absolute text-center w-full">90's Yearbook</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="h-[250px] w-[250px] rounded-xl bg-[url('/assets/imgs/transformation_example.png')] bg-cover bg-center overflow-hidden">
+                  <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-30 h-full w-full relative cursor-pointer">
+                    <h2 class=" font-bold text-white z-10 h-100 bottom-4 absolute text-center w-full">90's Yearbook</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="h-[250px] w-[250px] rounded-xl bg-[url('/assets/imgs/transformation_example.png')] bg-cover bg-center overflow-hidden">
+                  <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-30 h-full w-full relative cursor-pointer">
+                    <h2 class=" font-bold text-white z-10 h-100 bottom-4 absolute text-center w-full">90's Yearbook</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="h-[250px] w-[250px] rounded-xl bg-[url('/assets/imgs/transformation_example.png')] bg-cover bg-center overflow-hidden">
+                  <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-30 h-full w-full relative cursor-pointer">
+                    <h2 class=" font-bold text-white z-10 h-100 bottom-4 absolute text-center w-full">90's Yearbook</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="h-[250px] w-[250px] rounded-xl bg-[url('/assets/imgs/transformation_example.png')] bg-cover bg-center overflow-hidden">
+                  <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-30 h-full w-full relative cursor-pointer">
+                    <h2 class=" font-bold text-white z-10 h-100 bottom-4 absolute text-center w-full">90's Yearbook</h2>
+                  </div>
+                </div>
+              </li>
+          </ul>                
+      </div>
+      <!-- End: Carousel animation -->
+      
+  </div>
+</div>
 
 
 <!-- FEATURES -->
