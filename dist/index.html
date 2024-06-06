@@ -300,8 +300,6 @@
 
 
 
-
-
 <!-- PRICING -->
 
 
@@ -328,7 +326,7 @@
       <p class="text-gray-900">Access to our large library of image transformations.</p>
       <p class="mt-6 flex items-baseline gap-x-1">
         <!-- Price, update based on frequency toggle state -->
-        <span class="text-4xl font-bold tracking-tight text-gray-900">$0.10</span>
+        <span class="startervalue text-4xl font-bold tracking-tight text-gray-900">$0.10</span>
         <!-- Payment frequency, update based on frequency toggle state -->
         <span class="  font-semibold leading-6 text-gray-900">/call</span>
       </p>
@@ -337,16 +335,22 @@
       <fieldset>
         <div class="mt-8 space-y-3">
           <div class="flex items-center">
-            <input id="value-1a" name="price-bracket-starter" type="radio" checked class="h-4 w-4 border-gray-300 text-blue-500 focus:ring-blue-500 cursor-pointer">
-            <label for="value-1a" class="ml-3 text-gray-900 cursor-pointer">Under 1000 calls</label>
+            <label class="cursor-pointer contents">
+              <input class="h-4 w-4 cursor-pointer" type="radio" name="pricebracketstarter" value="$0.10" id="value-1a" checked/>
+              <span class="text-gray-900 ml-3">Under 1000 calls</span>
+            </label>
           </div>
           <div class="flex items-center">
-            <input id="value-2a" name="price-bracket-starter" type="radio" class="h-4 w-4 border-gray-300 text-blue-500 focus:ring-blue-500 cursor-pointer">
-            <label for="value-2a" class="ml-3 text-gray-900 cursor-pointer">Between 1000 and 5000 calls</label>
+            <label class="cursor-pointer contents">
+              <input class="h-4 w-4 cursor-pointer" type="radio" name="pricebracketstarter" value="$0.07" id="value-2a"/>
+              <span class="text-gray-900 ml-3">Between 1000 and 5000 calls</span>
+            </label>
           </div>
           <div class="flex items-center">
-            <input id="value-3a" name="price-bracket-starter" type="radio" class="h-4 w-4 border-gray-300 text-blue-500 focus:ring-blue-500 cursor-pointer">
-            <label for="value-3a" class="ml-3 text-gray-900 cursor-pointer">5000 calls and above notification</label>
+            <label class="cursor-pointer contents">
+              <input class="h-4 w-4 cursor-pointer" type="radio" name="pricebracketstarter" value="$0.05" id="value-3a"/>
+              <span class="text-gray-900 ml-3">5000 calls and above</span>
+            </label>
           </div>
         </div>
       </fieldset>
@@ -356,28 +360,36 @@
       <p class=" text-gray-900">Unlock access to premium filters and image transformation.</p>
       <p class="mt-6 flex items-baseline gap-x-1">
         <!-- Price, update based on frequency toggle state -->
-        <span class="text-4xl font-bold tracking-tight text-gray-900">$0.20</span>
+        <span class="advancedvalue text-4xl font-bold tracking-tight text-gray-900">$0.20</span>
         <!-- Payment frequency, update based on frequency toggle state -->
         <span class="font-semibold leading-6 text-gray-900">/call</span>
       </p>
       <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-gray-900 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-center">Buy plan</a>
       
+
       <fieldset>
         <div class="mt-8 space-y-3">
           <div class="flex items-center">
-            <input id="value-1b" name="price-bracket-advanced" type="radio" checked class="h-4 w-4 border-gray-300 text-blue-500 focus:ring-blue-500 cursor-pointer">
-            <label for="value-1b" class="ml-3 text-gray-900 cursor-pointer">Under 1000 calls</label>
+            <label class="cursor-pointer contents">
+              <input class="h-4 w-4 cursor-pointer" type="radio" name="pricebracketadvanced" value="$0.20" id="value-1b" checked/>
+              <span class="text-gray-900 ml-3">Under 1000 calls</span>
+            </label>
           </div>
           <div class="flex items-center">
-            <input id="value-2b" name="price-bracket-advanced" type="radio" class="h-4 w-4 border-gray-300 text-blue-500 focus:ring-blue-500 cursor-pointer">
-            <label for="value-2b" class="ml-3 text-gray-900 cursor-pointer">Between 1000 and 5000 calls</label>
+            <label class="cursor-pointer contents">
+              <input class="h-4 w-4 cursor-pointer" type="radio" name="pricebracketadvanced" value="$0.17" id="value-2b"/>
+              <span class="text-gray-900 ml-3">Between 1000 and 5000 calls</span>
+            </label>
           </div>
           <div class="flex items-center">
-            <input id="value-3b" name="price-bracket-advanced" type="radio" class="h-4 w-4 border-gray-300 text-blue-500 focus:ring-blue-500 cursor-pointer">
-            <label for="value-3b" class="ml-3 text-gray-900 cursor-pointer">5000 calls and above notification</label>
+            <label class="cursor-pointer contents">
+              <input class="h-4 w-4 cursor-pointer" type="radio" name="pricebracketadvanced" value="$0.15" id="value-3b"/>
+              <span class="text-gray-900 ml-3">5000 calls and above</span>
+            </label>
           </div>
         </div>
       </fieldset>
+
     </div>
     <div class="rounded-xl p-8 ring-1 xl:p-10 bg-gray-900 ring-gray-900">
 
