@@ -33,13 +33,13 @@
     <nav class="mx-auto flex max-w-7xl items-center justify-between py-6 px-8" aria-label="Global">
       <div class="flex items-center gap-x-9">
 
-        <div>
-          <img class="h-[36px]" src="/assets/imgs/phresque_logo.svg" alt="Your Company">
-        </div>
-        <!-- <div class="bg-blue-500 h-[36px] w-[36px] rounded-full"></div> -->
+        <a href="./">
+          <img class="h-[36px]" src="./assets/imgs/phresque_logo.svg" alt="Your Company">
+        </a>
+
         <div class="hidden lg:flex lg:gap-x-3">
-          <a href="#" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm">Product</a>
-          <a href="#" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm">Pricing</a>
+          <a id="productButton" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm cursor-pointer">Product</a>
+          <a id="pricingButton" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm cursor-pointer">Pricing</a>
           <a  href="#" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm">Quickstart</a>
         </div>
       </div>
@@ -53,14 +53,14 @@
         </button>
       </div>
       <div class="hidden lg:flex">
-        <a  href="#" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm mr-3" >Log In</a>
+        <a  href="./login.html" class="rounded-md px-3 py-2 text-gray-900 hover:bg-gray-200 font-bold text-sm mr-3" >Log In</a>
 
         <button type="button" class="rounded-md bg-gray-900 px-3 py-2 text-white shadow-sm hover:bg-blue-500 font-bold text-sm">Get Started <span
           aria-hidden="true">&rarr;</span></button>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="hidden" role="dialog" aria-modal="true">
+    <div class="lg:hidden" role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-10"></div>
       <div
@@ -69,7 +69,7 @@
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Phresque</span>
             <div>
-              <img class="h-[36px]" src="/assets/imgs/phresque_logo.svg" alt="Your Company">
+              <img class="h-[36px]" src="./assets/imgs/phresque_logo.svg" alt="Your Company">
             </div>
           </a>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-900">
@@ -91,7 +91,7 @@
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Quickstart</a>
             </div>
             <div class="py-6 space-y-2">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-blue-50 hover:text-blue-500">Log in</a>
+              <a href="./login.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-blue-50 hover:text-blue-500">Log in</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-gray-900 hover:bg-blue-500 text-white">Get Started <span aria-hidden="true">&rarr;</span></a>
 
             </div>
@@ -191,7 +191,7 @@
       <div class="block md:flex">
         <div class="grow space-y-4 mb-8">
           <div>
-            <img class="h-[36px]" src="/assets/imgs/phresque_logo_w.svg" alt="Your Company">
+            <img class="h-[36px]" src="./assets/imgs/phresque_logo_w.svg" alt="Your Company">
           </div>
           <p class="leading-6 text-white text-sm">Made in Paris with &#10084;&#65039;</p>
           <div class="flex space-x-6">
@@ -252,13 +252,13 @@
               <h3 class="font-semibold leading-6 text-white">Terms & Policies</h3>
               <ul role="list" class="mt-6 space-y-2 text-sm">
                 <li>
-                  <a href="#" class="leading-6 text-white hover:underline">Terms & Conditions</a>
+                  <a href="./legal1.html" class="leading-6 text-white hover:underline">Terms & Conditions</a>
                 </li>
                 <li>
-                  <a href="#" class="leading-6 text-white hover:underline">Privacy Policy</a>
+                  <a href="./legal2.html" class="leading-6 text-white hover:underline">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#" class="leading-6 text-white hover:underline">Website Terms</a>
+                  <a href="./legal3.html" class="leading-6 text-white hover:underline">Website Terms</a>
                 </li>
               </ul>
             </div>
