@@ -11,6 +11,16 @@ $("#pricingButton").click(function() {
     }, 500);
 });
 
+// MENU HIDE/SHOW
+$("#showMenu").click(function(){
+    $("#sideMenu").show();
+});
+
+$("#hideMenu").click(function(){
+    $("#sideMenu").hide();
+});
+
+
 // CARROUSEL
 tailwind.config = {
     theme: {
